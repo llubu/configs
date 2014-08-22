@@ -11,7 +11,7 @@ set number
 set shiftwidth=4
 set autoindent
 set cindent
-
+set cul
 
 set foldmethod=indent
 set foldnestmax=10
