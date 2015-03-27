@@ -1,6 +1,7 @@
 syntax enable
 set background=dark
 set t_Co=256
+
 "let g:solarized_termcolors=256
 "let g:molokai_original = 1
 let g:rehash256 = 1
@@ -22,8 +23,7 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-"######################################################################                                                                       
-" Easier split navigation                                                                                                                               
+"######################################################################           		" Easier split navigation
 "######################################################################
 
 " Use ctrl-[hjkl] to select the active split!
