@@ -1,14 +1,18 @@
 syntax enable
 set background=dark
 set t_Co=256
-let g:solarized_termcolors=256
-colorscheme solarized
+"let g:solarized_termcolors=256
+"let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai "solarized
 
+"For vim-airline. Makes status line display by default
+set laststatus=2
 
 set number
 set hlsearch
 set number
-set shiftwidth=4
+set shiftwidth=8
 set autoindent
 set cindent
 set cul
@@ -17,6 +21,17 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+
+"######################################################################                                                                       
+" Easier split navigation                                                                                                                               
+"######################################################################
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
+nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
+nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
+nmap <silent> <c-l> :wincmd l<CR>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
