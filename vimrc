@@ -1,46 +1,48 @@
 syntax enable
 set background=dark
 set t_Co=256
-
 "let g:solarized_termcolors=256
-"let g:molokai_original = 1
+let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme molokai "solarized
 
 "For vim-airline. Makes status line display by default
 set laststatus=2
 
-set number
 set hlsearch
 set number
 set shiftwidth=8
 set autoindent
 set cindent
 set cul
-
+set colorcolumn=80
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-"######################################################################           		" Easier split navigation
+"to highlight the trailling white spaces
+match ErrorMsg '\s\+$'
+
+"######################################################################
+" Easier split navigation
 "######################################################################
 
 " Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
-nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
-nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CSCOPE settings for vim           
+" CSCOPE settings for vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " This file contains some boilerplate settings for vim's cscope interface,
     " plus some keyboard mappings that I've found useful.
     "
-    " USAGE: 
+    " USAGE:
     " -- vim 6:     Stick this file in your ~/.vim/plugin directory (or in a
     "               'plugin' directory in some other directory that is in your
     "               'runtimepath'.
@@ -48,7 +50,7 @@ nmap <silent> <c-l> :wincmd l<CR>
     " -- vim 5:     Stick this file somewhere and 'source cscope.vim' it from
     "               your ~/.vimrc file (or cut and paste it into your .vimrc).
     "
-    " NOTE: 
+    " NOTE:
     " These key maps use multiple keystrokes (2 or 3 keys).  If you find that vim
     " keeps timing you out before you can complete them, try changing your timeout
     " settings, as explained below.
@@ -60,7 +62,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 
     " This tests to see if vim was configured with the '--enable-cscope' option
-    " when it was compiled.  If it wasn't, time to recompile vim... 
+    " when it was compiled.  If it wasn't, time to recompile vim...
     if has("cscope")
 
     """"""""""""" Standard cscope/vim boilerplate
