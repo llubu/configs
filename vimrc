@@ -9,11 +9,12 @@ colorscheme molokai "solarized
 "For vim-airline. Makes status line display by default
 set laststatus=2
 
-set list lcs=tab:\|\
+set list lcs=tab:\|\ 
 
 set hlsearch
 set number
-set shiftwidth=8
+set shiftwidth=4
+set tabstop=4
 set autoindent
 set cindent
 set cul
@@ -49,6 +50,9 @@ Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
 "Solarized
 Plug 'altercation/vim-colors-solarized'
+"Youcompleteme
+Plug 'valloric/youcompleteme'
+
 
 call plug#end()
 
